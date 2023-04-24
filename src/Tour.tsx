@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const Tour: React.FC<{ id: string, image: string, info: string, price: string, name: string,ind:number,  removeTour: (id:string)=>void;
 }> = ({ id, image, info, price, name,removeTour ,ind}) => {
   const images =["https://images.unsplash.com/photo-1508050919630-b135583b29ab?ixlib=rb-4.0.3&ixid=&auto=format&fit=crop&w=2071&q=80",
@@ -9,9 +8,9 @@ const Tour: React.FC<{ id: string, image: string, info: string, price: string, n
   "https://images.unsplash.com/photo-1607427293702-036933bbf746?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvbGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"]
 
   const [readMore, setReadMore] = useState<boolean>(false)
- 
+ console.log("id",id," ind ", ind, "name ",name)
   return <article className='single-tour'>
-    <img src={images[ind]} alt={name} />
+    <img src={image} alt={name} />
     <footer>
       <div className="tour-info">
         <h4>{name}</h4>

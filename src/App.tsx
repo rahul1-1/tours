@@ -10,7 +10,8 @@ function App() {
   const [tours,setTours] = useState<ITours[]>([]);
 
   const removeTour = (id:string) =>{
-    const newTours = tours.filter((tour) => tour.id!=id);
+    console.log("id in app ",id)
+    const newTours = tours.filter((tour) => tour.id!==id);
     setTours(newTours) 
   }
   const fetchTours = async () => {
