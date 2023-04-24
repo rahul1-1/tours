@@ -15,7 +15,7 @@ const Tours:React.FC<IProps> = ({tours,removeTour}) => {
       </div>
       <div>
         {tours.map((tour,index) => { 
-           return <Tour key={tour.id} {...tour} removeTour = {removeTour} ind={index} ></Tour>
+           return <Tour key={tour.id} {...tour} removeTour = {removeTour} ></Tour>
           }
         )}
       </div>
