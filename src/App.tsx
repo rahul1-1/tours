@@ -33,7 +33,7 @@ function App() {
 
   if(loading){
     return (
-      <main> <Loading></Loading></main>
+      <main> <Loading /></main>
     )
   }
   if (tours.length === 0) {

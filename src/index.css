@@ -151,14 +151,26 @@ p {
 Tours
 ===============
 */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border:5px solid var(--clr-grey-4);
+   border-radius: 50%;
+  border-top-color: var(--clr-primary-5);
+  animation: spin 0.4s linear infinite;
+  margin: 0 auto; 
+}
 main {
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 5rem auto;
 }
-.loading {
-  text-align: center;
-}
+
 .title {
   text-align: center;
   margin-bottom: 4rem;
